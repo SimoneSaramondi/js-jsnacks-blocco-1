@@ -11,9 +11,12 @@ if(primaParola === "" || secondaParola === ""){
 }else if(lunghezzaPrimaParola > lunghezzaSecondaParola){
     console.log(secondaParola);
     console.log(primaParola);
+    document.getElementById("stampa").innerHTML= secondaParola + " " + primaParola;
 } else if(lunghezzaSecondaParola > lunghezzaPrimaParola){
     console.log(primaParola);
     console.log(secondaParola);
+    document.getElementById("stampa").innerHTML= primaParola + " " + secondaParola;
 } else{
     console.log("Le due parole hanno la stessa lunghezza");
+    document.getElementById("stampa").innerHTML= "Le due parole hanno la stessa lunghezza";
 }
