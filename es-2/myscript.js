@@ -1,7 +1,7 @@
 var somma = 0;
 var numero;
 
-for (var i = 0; i < 10; i++) {
+for (var i = 1; i <= 10; i++) {
     numero = parseInt(prompt("Inserisci il " + i + " ^ numero"));
     
     if (!Number.isNaN(numero)) {
