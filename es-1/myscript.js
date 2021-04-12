@@ -6,8 +6,8 @@ var lunghezzaSecondaParola = secondaParola.length;
 console.log("La prima parola: " + primaParola + " è composta da: " + lunghezzaPrimaParola + " caratteri");
 console.log("La seconda parola: " + secondaParola + " è composta da: " + lunghezzaSecondaParola + " caratteri");
 
-if(primaParola === "" || secondaParola === ""){
-    console.log("Non hai inserito una delle due parole o tutte e due le parole");
+if(primaParola === "" || secondaParola === "" || typeof primaParola !== "undefined" || typeof secondaParola !== "undefined"){
+    console.log("Non hai inserito una delle due parole o tutte e due le parole o hai inserito parole con numeri");
 }else if(lunghezzaPrimaParola > lunghezzaSecondaParola){
     console.log(secondaParola);
     console.log(primaParola);
